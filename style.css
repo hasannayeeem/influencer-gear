@@ -20,13 +20,15 @@ body{
         margin: 0 auto;
         padding-top: 30px;
 }
-ul{
+.header ul{
         display: flex;
 }
-ul li{
+.header ul li{
         margin-right: 10px;
 }
-
+.header ul li a{
+    color: #3A3A3A;
+}
 .header-logo__link{
         text-align: center;
         font-size: 24px;
