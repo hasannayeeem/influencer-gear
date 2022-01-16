@@ -100,8 +100,7 @@ position: relative;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
     margin: 0 auto;
-    width: 90%;
-    
+    width: 90%;  
 }
 .card{
     background: #FFFFFF;
@@ -167,23 +166,23 @@ end product css
 ---------------- */
 /* start sell-us css */
 .sell-us-area{
-padding: 50px;
+    padding: 50px;
 }
-.section-head{
-    justify-content: center;
+.sell-head{
     margin: 0 auto;
-    align-items: center;
+    text-align: center;
+    padding-top: 50px;
 }
-.section-head a{
+.sell-head a{
     display: inline-block;
 }
 .sell-us{
-display: flex;
-justify-content: center;
-text-align: center;
-width: 70%;
-margin: 0 auto;
-padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
 }
 .section__title{
     font-weight: 600;
@@ -196,68 +195,72 @@ padding-top: 50px;
     margin: 0 auto;
 }
 .section__des{
-
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+    margin-top: 5px;
 }
-.sell-us a{
-text-decoration-line: underline;
+.sell-head a{
+    text-decoration: underline;
 }
 .sell-valid{
-width: 35%;
-background-color: purple;
-height: 400px;
+    width: 320px;
+    background-color: #E02C6D;
+    color: #fff;
+    height: 350px;
 }
 .sell-valid h3{
     font-weight: 500;
     font-size: 28px;
     line-height: 40px;
-    color:  #18191F;
-    padding-top: 20px;
+    color: #fff;
+    padding-top: 28px;
     padding-bottom: 20px;
+    margin-left: 10px;
 }
-.sell-valid ul{
+.fa-check-circle{
+    margin-right: 15px;
+    font-size: 40px;
+}
+.fa-times-circle{
+    margin-right: 15px;
+    font-size: 40px;
+}
+.fa-circle{
+    margin-right: 15px;
+    font-size: 5px;
+}
+.valid__item{
+    list-style: inside;
+}
+.sell-us ul{
     display: flex;
-
     flex-direction: column;
     text-align: left;
 }
-.sell-valid ul li{
-list-style-type: style;
-display: inline-block;
-padding-left: 20px;
-padding-top: 8px;
-margin-left: 5px;
+.sell-us ul li{
+    list-style: inside;
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 8px;
+    margin-left: 20px;
 }
-.sell-valid ul li a{
-display: inline-block;
+.sell-us ul li a{
+    display: inline-block;
 }
 .sell-invalid{
-    width: 35%;
-
+    width: 320px;
+    height: 350px;
 }
 .sell-invalid h3{
     font-weight: 500;
     font-size: 28px;
     line-height: 40px;
-    color:  #18191F;
-    padding-top: 20px;
+    padding-top: 28px;
     padding-bottom: 20px;
+    margin-left: 30px;
 }
-.sell-invalid ul{
-display: flex;
-
-flex-direction: column;
-text-align: left;
-}
-.sell-invalid ul li{
-    list-style-type: style;
-    display: inline-block;
-    padding-left: 20px;
-    padding-top: 8px;
-    margin-left: 5px;
-}
-.sell-invalid ul li a{
-    display: inline-block;
-}
+/* end sell css */
 /* start footer css */
 footer{
     background-color: #0A0826;
@@ -277,7 +280,6 @@ footer{
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
-
 }
 .footer-link{
     margin-top: 15px;
@@ -315,18 +317,19 @@ footer{
 
    
     .product-cards{
-        /* display: grid;
-        grid-template-columns: repeat(1, 1fr);    */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);   
          
     }
     .card{
         margin: 0 auto;
-    }    
+    }   
+    .sell-us{
+        display: flex;
+        flex-direction: column;
+    } 
 }
-.sell-us{
-    display: flex;
-    flex-direction: column;
-}
+
 
 /* tablets devices */
 @media only screen and (min-width:689px) and (max-width:992px){
@@ -337,4 +340,7 @@ footer{
     .card{
         margin: 0 auto;
     } 
+    .sell-us{
+        width: 80%;
+    }
 }
