@@ -302,7 +302,7 @@ footer{
     .header{  
        justify-content: center;
     }   
-    ul{
+    .header ul{
         display: none;
     }
 .hero{
