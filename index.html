@@ -9,29 +9,6 @@
     <script src="https://kit.fontawesome.com/84c6db8597.js" crossorigin="anonymous"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-    <style>
-        /* Basic styles for form */
-        .form-container {
-            width: 300px;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-family: Arial, sans-serif;
-        }
-
-        .form-container input,
-        .form-container button {
-            width: 100%;
-            padding: 8px;
-            margin: 10px 0;
-        }
-
-        .turnstile-container {
-            margin: 15px 0;
-        }
-    </style>
 </head>
 <body>
     <!-- start header section  -->
@@ -318,25 +295,6 @@
         </section>         
     </main>
     <!-- end main section  -->
-    <!-- start form section  -->
-    <div class="form-container">
-        <h2>Contact Us</h2>
-        <form id="customForm" action="#">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <div class="turnstile-container">
-                <!-- Cloudflare Turnstile CAPTCHA element -->
-                <div class="cf-turnstile" data-sitekey="0x4AAAAAAAyvjqE6e47zN55z"></div>
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <!-- end form section  -->
     <!-- start footer section  -->
     <footer>
         <h2 class="footer__title">Influencer products</h2>
